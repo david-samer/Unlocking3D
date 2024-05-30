@@ -7,16 +7,16 @@ dataset:
   root_dir: ./outputs/
   cam_pose_dir: null
   scene: scene_name
-  imSize: [1024, 1024]  # should use larger res, otherwise the exported mesh has wrong colors
-  camera_type: pinhole
+  imSize: [320, 320]  # should use larger res, otherwise the exported mesh has wrong colors
+  camera_type: ortho
   apply_mask: true
-  camera_params: [320.719333182715, 320.1815001140895, 160.9954396730627, 160.2710416469586]
+  camera_params: null
   view_weights: [1.0, 0.8, 0.2, 1.0, 0.4, 0.7]  #['front', 'front_right', 'right', 'back', 'left', 'front_left']
-  # view_weights: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0] 
+  #view_weights: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0] 
 
 model:
   name: neus
-  radius: 1.0
+  radius: 1.7
   num_samples_per_ray: 1024
   train_num_rays: 256
   max_train_num_rays: 8192
